@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Единый каталог программ кружка по 3D-моделированию и поурочных планов для каждой возрастной группы.">
+  <meta name="theme-color" content="#111111">
+  <title>Программы 3D-моделирования</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/plans.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Перейти к содержимому</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Навигация по сайту">
+      <div class="sidebar-head">
+        <a class="brand" href="#overview" aria-label="На главную">
+          <span class="brand-mark">3D</span>
+          <span><strong>ПРОГРАММЫ</strong><small>единый каталог</small></span>
+        </a>
+        <button class="sidebar-close" type="button" aria-label="Закрыть меню">×</button>
+      </div>
+
+      <div class="sidebar-scroll">
+        <section class="nav-zone" aria-labelledby="general-nav-title">
+          <p class="nav-label" id="general-nav-title">Общее</p>
+          <nav class="main-nav" aria-label="Разделы сайта">
+            <button class="nav-item is-active" type="button" data-view="overview">
+              <span class="nav-icon" aria-hidden="true">⌂</span><span>Обзор</span>
+            </button>
+            <button class="nav-item" type="button" data-view="programs">
+              <span class="nav-icon" aria-hidden="true">▦</span><span>Все программы</span>
+            </button>
+            <button class="nav-item" type="button" data-view="documents">
+              <span class="nav-icon" aria-hidden="true">▤</span><span>Документы</span>
+            </button>
+            <button class="nav-item" type="button" data-view="about">
+              <span class="nav-icon" aria-hidden="true">i</span><span>О проекте</span>
+            </button>
+          </nav>
+        </section>
+
+        <div class="nav-divider" aria-hidden="true"></div>
+
+        <section class="nav-zone program-zone" aria-labelledby="program-nav-title">
+          <div class="nav-zone-head">
+            <p class="nav-label" id="program-nav-title">Программы</p>
+            <span class="nav-count">7</span>
+          </div>
+          <nav class="program-nav" id="program-nav" aria-label="Переключение программ"></nav>
+        </section>
+      </div>
+
+      <div class="sidebar-foot">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span><strong>Планы готовы</strong><small>7 программ · 178 часов</small></span>
+      </div>
+    </aside>
+
+    <button class="backdrop" type="button" aria-label="Закрыть меню" tabindex="-1"></button>
+
+    <main class="workspace" id="content" tabindex="-1">
+      <header class="topbar">
+        <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Открыть меню">☰</button>
+        <div class="topbar-title"><strong>Программы 3D</strong><span>единый каталог</span></div>
+        <span class="draft-badge">Рабочая версия</span>
+      </header>
+
+      <div class="workspace-inner">
+        <header class="page-header">
+          <div>
+            <p class="breadcrumb" id="breadcrumb">Общий каталог / Обзор</p>
+            <h1 id="page-title">Программы 3D-моделирования</h1>
+          </div>
+          <span class="draft-badge desktop-badge">Поурочно</span>
+        </header>
+
+        <div id="page-content" aria-live="polite"></div>
+
+        <footer class="site-footer">
+          <span>Единый каталог программ и поурочного планирования</span>
+          <a href="https://www.figma.com/community/file/977500202909795677/dashboard" target="_blank" rel="noreferrer">Дизайн-референс: Dashboard by Dwinawan, CC BY 4.0</a>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <noscript>Для переключения разделов сайта необходимо включить JavaScript.</noscript>
+</body>
+</html>
